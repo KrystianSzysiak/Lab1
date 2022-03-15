@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        int a = 3;
+        /* int a = 3;
         double b = 4.21;
         String s = "Jakiś tekst";
 
@@ -24,6 +24,17 @@ public class Main {
             num2 = input.nextInt();
             if ((num1 == 0) || (num2 == 0)) break;
             System.out.printf("Wynik dodawania %d + %d = %d%n", num1, num2, num1 + num2);
-            } while (true);
+            } while (true); */
+
+    System.out.printf("Program do wypisania postaci dwójkowej i szesnastkowej.\n Podaj liczbę: ");
+    Scanner input = new Scanner(System.in);
+    int num1=0;
+    num1 = input.nextInt();
+    String BIN,HEX;
+    BIN = Integer.toBinaryString(num1);
+    HEX = Integer.toHexString(num1);
+    System.out.printf("DEC = "+num1+"\nBIN = "+BIN+"\nHEX = "+HEX);
+
+
     }
 }
