@@ -2,7 +2,7 @@ package pl.lublin.wsei.java.cwiczenia.mylib;
 
 
 public class Account {
-    public String name;
+    private String name;
     public void setName(String name) {
         this.name = name;
     }
