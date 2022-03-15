@@ -62,10 +62,12 @@ public class Main {
     }
     System.out.printf("MIN = %d, MAX = %d, AVG = %f", mn,mx,(float)avg/liczby.length);*/
         Account acc = new Account();
-        acc.name = "Piotr Gołabek";
+        acc.setName("piotr Gołabek");
         System.out.println(acc.getName());
 
     }
+    System.out.printf(„%s%n”,Account.capitalize(„stanisŁaw maruSARz”));
+
     private static String leftPad(String aText, char aChar, int aWidth)
     {
         String res = aText;
