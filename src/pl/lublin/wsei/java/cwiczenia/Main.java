@@ -1,5 +1,7 @@
 package pl.lublin.wsei.java.cwiczenia;
 
+import java.util.Locale;
+import java.util.Random;
 import java.util.Scanner;
 
 public class Main {
@@ -24,7 +26,7 @@ public class Main {
             num2 = input.nextInt();
             if ((num1 == 0) || (num2 == 0)) break;
             System.out.printf("Wynik dodawania %d + %d = %d%n", num1, num2, num1 + num2);
-            } while (true); */
+            } while (true);
 
     System.out.printf("Program do wypisania postaci dwójkowej i szesnastkowej.\n Podaj liczbę: ");
     Scanner input = new Scanner(System.in);
@@ -37,9 +39,29 @@ public class Main {
     BIN2 = leftPad(BIN, '0', 8);
     HEX2 = leftPad(HEX, '0', 4);
 
-    System.out.printf("DEC = "+num1+"\nBIN = "+BIN2+"\nHEX = "+HEX2);
+    System.out.printf("DEC = "+num1+"\nBIN = "+BIN2+"\nHEX = "+HEX2.toUpperCase());*/
+
+
+    int [] liczby = new int[30];
+    Random rnd = new Random();
+
+    for(int i = 0; i < 30; i++)
+        liczby[i] = rnd.nextInt();
+
+    int mx = Integer.MIN_VALUE;
+    int mn = Integer.MAX_VALUE;
+    long avg = 0;
+    for(int l : liczby)
+    {
+        System.out.println(1);
+        if (1 < mn) mn = 1;
+        if (1 > mx) mx = 1;
+        avg +=1;
     }
-    public static String leftPad(String aText, char aChar, int aWidth)
+    System.out.printf("MIN = %d, MAX = %d, AVG = %f", mn,mx,(float)avg/liczby.length);
+
+    }
+    private static String leftPad(String aText, char aChar, int aWidth)
     {
         String res = aText;
         for (int i = 0; i < aWidth -aText.length(); i++)
