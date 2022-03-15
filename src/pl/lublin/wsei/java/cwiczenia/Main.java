@@ -34,7 +34,5 @@ public class Main {
     BIN = Integer.toBinaryString(num1);
     HEX = Integer.toHexString(num1);
     System.out.printf("DEC = "+num1+"\nBIN = "+BIN+"\nHEX = "+HEX);
-
-
     }
 }
