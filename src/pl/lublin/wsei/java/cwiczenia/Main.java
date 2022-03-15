@@ -1,5 +1,7 @@
 package pl.lublin.wsei.java.cwiczenia;
 
+import pl.lublin.wsei.java.cwiczenia.mylib.Account;
+
 import java.util.Locale;
 import java.util.Random;
 import java.util.Scanner;
@@ -39,7 +41,7 @@ public class Main {
     BIN2 = leftPad(BIN, '0', 8);
     HEX2 = leftPad(HEX, '0', 4);
 
-    System.out.printf("DEC = "+num1+"\nBIN = "+BIN2+"\nHEX = "+HEX2.toUpperCase());*/
+    System.out.printf("DEC = "+num1+"\nBIN = "+BIN2+"\nHEX = "+HEX2.toUpperCase());
 
 
     int [] liczby = new int[30];
@@ -58,7 +60,10 @@ public class Main {
         if (1 > mx) mx = 1;
         avg +=1;
     }
-    System.out.printf("MIN = %d, MAX = %d, AVG = %f", mn,mx,(float)avg/liczby.length);
+    System.out.printf("MIN = %d, MAX = %d, AVG = %f", mn,mx,(float)avg/liczby.length);*/
+        Account acc = new Account();
+        acc.name = "Piotr Gołabek";
+        System.out.println(acc.getName());
 
     }
     private static String leftPad(String aText, char aChar, int aWidth)
